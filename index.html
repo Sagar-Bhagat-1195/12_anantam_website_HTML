@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anantam Digital - Digital Printing</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: linear-gradient(180deg, #001f3f, #003f7f);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #001f3f, #003f7f);
+        }
+
+        .hero img {
+            max-width: 150px;
+        }
+
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero .cta {
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff006e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #ff3399;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .services .service {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: white;
+            text-align: center;
+        }
+
+        .portfolio .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio .item {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+            /*background: #ddd;*/
+            height: 200px;
+            /* background-image: url('E:\anantam website\img\N1.jpeg');
+             Replace 'your-image-path.jpg' with the actual image path */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            /* Optional: for rounded edges */
+        }
+
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin: 20px auto;
+            max-width: 700px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* social media */
+
+        .social-media {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .social-media h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .social-icon img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon img:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* Contact Section */
+        .contact {
+            background: white;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background: #ff006e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #ff3399;
+        }
+
+        /* Footer */
+        footer {
+            background: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff006e;
+        }
+
+        .footer-social {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer-social img {
+            width: 40px;
+            color: white;
+            height: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="./Anantam_digital_logo_flat.png" alt="Anantam Digital Logo">
+        <h1>Welcome to ANANTAM DIGITAL</h1>
+        <p>Transforming Ideas into Reality with Digital Printing</p>
+        <div class="cta">
+            <a href="https://wa.me/+917778029008" class="cta-button">Contact Us</a>
+            <a href="https://maps.app.goo.gl/8UrWVZ2PwQRraePk7" target="_blank" class="cta-button">Location</a>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Who We Are</h2>
+        <p>Anantam Digital is your one-stop solution for all digital printing needs. We specialize in delivering
+            high-quality, vibrant, and innovative designs that bring your ideas to life.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Custom Printing</h3>
+            <p>We offer personalized printing solutions tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h3>Allover Design</h3>
+            <p>Our team creates stunning designs to elevate your brand.</p>
+        </div>
+        <div class="service">
+            <h3>job work</h3>
+            <p>We can do Jobwork as per your requirements in your fabrics.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Work</h2>
+        <div class="grid">
+            <div class="item" style="background-image: url('img/N1.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N2.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N3.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N4.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N5.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N6.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N7.jpeg');"></div>
+            <div class="item" style="background-image: url('img/N8.jpeg');"></div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Anantam Digital brought our vision to life. The quality and service were exceptional!"</p>
+        </div>
+        <div class="testimonial">
+            <p>"Their team is professional, creative, and delivers on time. Highly recommended!"</p>
+        </div>
+    </section>
+    <!-- social media Section -->
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+            <a href="https://wa.me/+917778029008" target="_blank" class="social-icon">
+                <img src="icon/whatsapp-brands-solid.svg" alt="Whatsapp">
+            </a>
+            <a href="https://facebook.com/yourpage" target="_blank" class="social-icon">
+                <img src="icon/facebook-brands-solid.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/anantam_digital" target="_blank" class="social-icon">
+                <img src="icon/instagram-brands-solid.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/yourpage" target="_blank" class="social-icon">
+                <img src="icon/x-twitter-brands-solid.svg" alt="Twitter">
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section 
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> 24-A, Amul industrial, beside Shree ram marbal, Bhatar-Althan Road, Bhatar,
+                Surat, Gujarat- 395017</p>
+            <p><strong>Phone:</strong> +91-7778029008 or +91-7359350536</p>
+            <p><strong>Email:</strong> anantamdigital@gmail.com</p>
+        </div>
+
+      <!--- <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://whatsapp.com/in/yourprofile" target="_blank" class="social-icon">
+                <img src="icon/whatsapp-brands-solid.svg" alt="Whatsapp">
+            </a>
+            <a href="https://facebook.com/yourpage" target="_blank" class="social-icon">
+                <img src="icon/facebook-brands-solid.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/yourpage" target="_blank" class="social-icon">
+                <img src="icon/instagram-brands-solid.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/yourpage" target="_blank" class="social-icon">
+                <img src="icon/x-twitter-brands-solid.svg" alt="Twitter">
+            </a>
+        </div>  ---> 
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Anantam Digital. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
